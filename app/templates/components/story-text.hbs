@@ -1,0 +1,11 @@
+<h2>
+  {{story.title}}
+</h2>
+{{#if story.ref}}
+  <a target='_blank' href='{{story.ref}}'>
+    {{story.text}}
+  </a>
+{{else}}
+  {{story.text}}
+{{/if}}
+{{yield}}

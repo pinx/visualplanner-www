@@ -1,0 +1,13 @@
+<h1 id="title">Welkom bij Visual Planner</h1>
+{{#vertical-collection
+  content=model
+  defaultHeight=20
+  alwaysUseDefaultHeight=false
+  containerSelector="body"
+  lastReached="loadBelow"
+  as |story|
+  }}
+  {{story-text story=story}}
+{{/vertical-collection}}
+
+{{outlet}}
